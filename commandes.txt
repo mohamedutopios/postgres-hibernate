@@ -1,0 +1,4 @@
+--- log_statement_sample_rate = 0.5
+--- log_transaction_sample_rate = 0.5
+
+log_temp_files=0
