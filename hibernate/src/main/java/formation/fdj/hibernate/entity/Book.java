@@ -9,8 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-//Annotation pour indiquer le classe mère n'a pas de table
-//@MappedSuperclass
+
 
 @NamedEntityGraph(
         name = "graph-author",
@@ -19,14 +18,6 @@ import java.util.List;
         }
 )
 @Entity
-//Annotations pour indiquer que la stratégie de gestion d'héritage se fait par une unique table
-//@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
-//@DiscriminatorColumn(name = "book_type", discriminatorType = DiscriminatorType.STRING)
-
-//Pour avoir plusieurs table, mais avec les fileds des enfants uniquement
-//@Inheritance(strategy = InheritanceType.JOINED)
-
-//Avoir plusieurs table
 @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
 @DynamicUpdate
 @Cacheable
