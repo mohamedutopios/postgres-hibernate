@@ -155,6 +155,10 @@ CREATE TABLE exemple_schema.utilisateurs (
     date_creation TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+SELECT *
+FROM information_schema.tables
+WHERE table_schema = 'public';
+
 -- Ajouter une colonne à la table
 ALTER TABLE exemple_schema.utilisateurs ADD COLUMN age INT;
 
