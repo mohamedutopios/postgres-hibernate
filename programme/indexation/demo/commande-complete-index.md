@@ -1,5 +1,3 @@
-D'accord, voici un guide complet sur les opérations possibles au niveau de l'indexation dans PostgreSQL, avec des exemples simples mais pas sur la base de données Chinook. Nous utiliserons une base de données exemple générique avec une table `sales` pour illustrer différents types d'indexation.
-
 ### 1. Création d'une Table Exemple
 
 Nous allons créer une table `sales` avec quelques colonnes pour nos exemples d'indexation.
@@ -151,5 +149,3 @@ Voici un résumé des opérations possibles pour l'indexation dans PostgreSQL, a
 - **Créer un index sur colonne calculée** : `CREATE INDEX idx_sales_month ON sales ((EXTRACT(MONTH FROM sale_date)));`
 - **Supprimer un index** : `DROP INDEX idx_sales_product_id;`
 - **Modifier un index** : Supprimer et recréer l'index avec les modifications nécessaires.
-
-Ces opérations couvrent les différents types d'indexation possibles dans PostgreSQL et montrent comment chaque type peut être utilisé pour optimiser les performances des requêtes dans différents scénarios.
